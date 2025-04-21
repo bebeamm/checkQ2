@@ -19,14 +19,15 @@ body {
 
 /* กล่องครอบเนื้อหา */
 .container {
-  max-width: 480px;
-  width: 90%;
+  max-width: 768px; /* รองรับขนาดไอแพด */
+  width: 80%;
   padding: 2em;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 
 /* หัวข้อ */
 h2 {
@@ -126,9 +127,9 @@ h2, h3 {
 }
 
 /* สำหรับมือถือ */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .container {
-    width: 90vw;
+    width: 70%
     padding: 3em 2em; /* เพิ่ม padding เพื่อให้กล่องใหญ่ขึ้น */
     transform: scale(1.3); /* ขยายขนาด 30% */
     transform-origin: center;
