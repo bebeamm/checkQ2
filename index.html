@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>🍀 ⋆Check Q [2025]🐟</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <img src="images/งานศิลปะที่ไม่มีชื่อ (2).png" alt="โลโก้" class="logo">
+
+    <h2>🔍 ตรวจสอบสถานะงาน</h2>
+    <h3>รอโหลดข้อมูล 3-5 วินาที</h3>
+
+    <input id="queueInput" placeholder="กรอกรหัสคิว เช่น A123">
+    <button onclick="checkStatus()">ค้นหา</button>
+
+    <div id="result">
+        <div id="resultText"></div>
+      </div>
+      
+    <div style="margin-top: 2em;">
+      คิวที่ยังไม่เสร็จ:
+      <span id="pendingBubble">0</span>
+    </div>
+  </div>
+  
+  <div id="burst-stars"></div>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

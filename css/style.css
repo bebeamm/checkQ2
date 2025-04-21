@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: repeating-linear-gradient(
+      90deg,  /* ลายทางในแนวนอน */
+      #daefff 0%,  /* สีฟ้าอ่อน */
+      #daefff 15px, /* ความกว้างของลายทาง */
+      #bfe3fc 10px,  /* สีขาว */
+      #bfe3fc 30px   /* ความกว้างของสีขาว */
+    );
+    font-family: 'Mali', sans-serif;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* ครอบจอแนวตั้ง */
+    flex-direction: column;}
+
+
+    
+    /* กล่องครอบเนื้อหา */
+    .container {
+      max-width: 480px;
+      width: 90%;
+      padding: 2em;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+  
+  /* หัวข้อ */
+  h2 {
+    margin-bottom: 1em;
+    line-height: 1.5;
+    color: #005b99;
+  }
+  
+  /* ช่อง input และปุ่ม */
+  input, button {
+    padding: 0.6em 1em;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin: 0.3em;
+    font-family: 'MyCuteFont', sans-serif;
+  }
+  
+  button {
+    background-color: #4bb4ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3399ff;
+  }
+  
+  /* กล่องผลลัพธ์ */
+  #result {
+    background-color: white;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* บับเบิ้ลจำนวนคิว */
+  #pendingBubble {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 2.2em;
+    height: 2.2em;
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  .logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h2, h3 {
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+  }
+
+  #burst-stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0; /* อยู่ด้านหลังกล่อง */
+    overflow: hidden;
+  }
+  
+  .burst-star {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.2em;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    animation: burst 1.2s ease-out forwards;
+  }
+  
+  @keyframes burst {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(var(--x), var(--y)) scale(0.5);
+      opacity: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 2.5em 1.5em;
+      font-size: 1.1em;
+    }
+  
+    input, button {
+      font-size: 1.1em;
+      padding: 0.8em 1em;
+    }
+  
+    h2, h3 {
+      font-size: 1.3em;
+    }
+  
+    #pendingBubble {
+      width: 2.5em;
+      height: 2.5em;
+      font-size: 1.1em;
+    }
+  }
+  
