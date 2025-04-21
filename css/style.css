@@ -129,19 +129,28 @@ body {
   
   @media (max-width: 768px) {
     .container {
-      width: 95vw;
-      padding: 2em 1em;
+      width: 90vw;
+      padding: 2.5em 1.5em;
     }
   
     input, button {
       font-size: 1.2em;
-      padding: 0.8em 1em;
+      padding: 0.8em 1.2em;
     }
   
     #pendingBubble {
-      width: 2.6em;
-      height: 2.6em;
+      width: 2.5em;
+      height: 2.5em;
+      font-size: 1.2em;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  
+    h3 {
       font-size: 1.1em;
     }
   }
+  
   
