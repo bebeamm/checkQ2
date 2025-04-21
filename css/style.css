@@ -129,8 +129,8 @@ h2, h3 {
 /* สำหรับมือถือ */
 @media (max-width: 480px) {
   .container {
-    width: 60%;
-    padding: 3em 2em; /* เพิ่ม padding เพื่อให้กล่องใหญ่ขึ้น */
+    width: 50%;
+    padding: 2.5em 1.5em; /* เพิ่ม padding เพื่อให้กล่องใหญ่ขึ้น */
     transform: scale(1.3); /* ขยายขนาด 30% */
     transform-origin: center;
   }
@@ -147,10 +147,10 @@ h2, h3 {
   }
 
   h2 {
-    font-size: 2.4em; /* เพิ่มขนาดฟอนต์ของ h2 */
+    font-size: 1.9em; /* เพิ่มขนาดฟอนต์ของ h2 */
   }
 
   h3 {
-    font-size: 2em; /* เพิ่มขนาดฟอนต์ของ h3 */
+    font-size: 1.6em; /* เพิ่มขนาดฟอนต์ของ h3 */
   }
 }
