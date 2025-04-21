@@ -136,21 +136,21 @@ h2, h3 {
   }
 
   input, button {
-    font-size: 1.2em;
-    padding: 0.8em 1.2em;
+    font-size: 1.4em;
+    padding: 1.6em 1.3em;
   }
 
   #pendingBubble {
-    width: 2.8em; /* ขยายขนาดบับเบิ้ล */
-    height: 2.8em;
-    font-size: 1.3em;
+    width: 3.2em; /* ขยายขนาดบับเบิ้ล */
+    height: 3.2em;
+    font-size: 1.6em;
   }
 
   h2 {
-    font-size: 1.8em; /* เพิ่มขนาดฟอนต์ของ h2 */
+    font-size: 2.4em; /* เพิ่มขนาดฟอนต์ของ h2 */
   }
 
   h3 {
-    font-size: 1.3em; /* เพิ่มขนาดฟอนต์ของ h3 */
+    font-size: 2em; /* เพิ่มขนาดฟอนต์ของ h3 */
   }
 }
